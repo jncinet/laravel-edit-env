@@ -1,0 +1,30 @@
+{
+  "name": "jncinet/edit-env",
+  "description": "edit laravel .env file.",
+  "keywords": [
+    "laravel",
+    "qihucms",
+    "env"
+  ],
+  "homepage": "https://www.qihucms.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "zhangye",
+      "email": "y@qilephp.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Qihucms\\EditEnv\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Qihucms\\EditEnv\\EditEnvServiceProvider"
+      ]
+    }
+  }
+}
