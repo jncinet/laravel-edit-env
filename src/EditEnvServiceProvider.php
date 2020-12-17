@@ -16,15 +16,7 @@ class EditEnvServiceProvider extends ServiceProvider
         $this->app->singleton(EditEnv::class, function () {
             return new EditEnv();
         });
-    }
 
-    /**
-     * Bootstrap services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        //
+        $this->app->alias(EditEnv::class, 'edit-env');
     }
 }
